@@ -1,0 +1,46 @@
+크로스브라우징 팁
+
+1. li에 position:relative값이 있으면 overflow:hidden준 곳에도 position:relative를 주어야한다 (IE7)
+
+2. ul수직정렬할때 li에 vertical-algin:top을 넣어준다 (IE7)
+
+3. a태그에 position:relative주고 height를 주었는데도 높이가 제대로 안나온다
+
+4. ie7 float 하나의 요소만 있으면 안된다.
+
+5. ie7 a태그안에 block요소는 클릭되지 않는다
+
+6. IE7에서 background-position:100%를 주면 이미지가 안나오는 이슈가 있다 
+
+7. ie7 position:absolute를 줄때 그객체를 감싸고 있는 객체에 z-index를 더 높여준다
+
+8. 파폭에서 버튼마크업 여백이슈가 있는경우 button::-moz-focus-inner{padding:0;border:0} 넣어주면된다
+
+9. 해상도에따라 글씨체 달라지는거 막을때-webkit-text-size-adjust:none
+
+10. <label style='vertical-align:top' >글씨나오는영역</label>주면 ie7에서 확인하면 위로 정렬되면서 하단이 짤려보이는 현상이 있다
+
+11. ie 7 세로 가운데정렬할경우 감싸고 있는 요소가 absolute top:0; left:0; right:0; bottom:0;으로 되어있으면 세로값을 못가져오는 경우가 있으므로 height:100%를 써준다
+
+12.  ie7 display:inline-block이 안되므로 *display:inline과 zoom:1을 써주거나 zoom:1만 써준다여기서 zoom은 핵이아니라 ie7만 적용되는 속성
+
+13. ul li위에 주석넣으면 ie7에서 first-child로 알아차리므로 ul위에 써준다
+
+14. line-height:1 IE7에서 글자짤림현상이 발생한다. vertical-align:top을써주면 가능
+
+15. dt dd 형태의 코드에서 dt만 float:left해주고 dd는 float안시켰을때 다른 브라우저에서는 잘나오지만 파폭에서 계단으로 나올수 있다
+
+16. fixed에 top값을 지정하지 않고도 margin-top으로 위치를 조정할 수 있다.
+
+
+모바일 
+
+1. overflow:auto;선언한 영역에는 -webkit-overflow-scrolling:touch; 같이 선언해주세요해당 속성의 역할은 아이폰의 관성스크롤을 모멘텀 스크롤로 바꿔줍니다.
+
+2. font-size 홀수 안드로이드와 ios 렌더링이 달라진다.
+
+
+
+
+
+
