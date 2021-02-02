@@ -410,9 +410,9 @@ body.fixed {
 .pop_container {
     position: relative;
     display: inline-block;
-    width: 90%;
+    width: 800px;
     margin: 0;
-    padding: 64px 0 80px 62px;
+    padding: 0;
     vertical-align: middle;
     text-align: left;
     border: 0;
@@ -467,8 +467,7 @@ body.fixed {
 .pop_content {
     overflow: auto;
     overflow-x: none;
-    max-height: 600px;
-    padding-right: 62px;
+    max-height: 640px;
 }
 
 .pop_content .btn_area {
@@ -488,11 +487,11 @@ body.fixed {
     background: #333;
     color: #fff
 }
-
+/* 
 .pop_content .info_area,
 .pop_content .cont_area {
     margin-top: 30px
-}
+} */
 
 .pop_content .info_area {
     width: 420px;
@@ -521,7 +520,18 @@ body.fixed {
 }
 
 .pop_content .cont_area .img_bx {
-    margin-top: 10px
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pop_content .cont_area .img_bx:first-child {
+    margin-top: 0;
+}
+
+.pop_content .cont_area .img_bx img {
+    max-width: 640px;
+    width: 100%;
+    vertical-align: top;
 }
 
 .pop_content .cont_area .img_bx+p {
@@ -568,7 +578,7 @@ body.fixed {
         right: 0;
         bottom: 0;
         width: auto;
-        padding: 32px 30px 100px
+        padding: 32px 30px 30px;
     }
 
     .pop_content {
