@@ -5,20 +5,22 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Portfolio :: yunsunAh</title>
-	<meta name="description" content="HTML, CSS, JAVASCRIPT, JQUERY Portfolio YunSeonJi">
+	<meta name="description" content="backing portfoilo, 베이킹, 제과제빵">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
-	<script src="js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+	<script src="js/main.js"></script>
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <script type="text/javascript">
-	$(function(){
-		$('img.lazy').lazyload({effect : 'fadeIn', effectTime : 2000});
+	$(function () {
+		$('img.lazy').lazyload({
+			effect: 'fadeIn',
+			effectTime: 2000
+		});
 	});
 </script>
 
@@ -29,11 +31,15 @@
 				<h1><a href="#">Yun Sun Ah</a></h1>
 				<nav>
 					<ul>
-						<li><a href="#aboutme"><span>about me</span></a></li>
+
+						<li><a href="#aboutme"><span>aboutme</span></a></li>
+
 						<li><a href="#home"><span>홈베이킹</span></a></li>
+
 						<li><a href="#bakery"><span>브릭스트릿 베이커리</span></a></li>
-						<!-- <li><a href="#cafe"><span>카페투어</span></a></li> -->
+
 						<li><a href="#contact"><span>contact</span></a></li>
+
 					</ul>
 				</nav>
 			</div>
@@ -42,7 +48,7 @@
 			<section id="aboutme" class="aboutme_sec">
 				<h1 class="tit">about me</h1>
 				<div class="cont">
-					<dl> 
+					<dl>
 						<dt class="name"><span>윤선아</span>(Yun Sun Ah)</dt>
 						<dd>1993. 05. 23</dd>
 						<dd>대전보건대학교 컴퓨터정보통신 졸업</dd>
@@ -67,10 +73,11 @@
 					</dl>
 				</div>
 			</section>
-			<section id="home" class="project_sec">
+			<section id="home" class="backing_sec">
 				<h1 class="tit">home baking</h1>
 				<div class="cont">
 					<ul class="list_item">
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img1_thumb.jpg" alt="" class="lazy">
@@ -78,16 +85,24 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>구움과자</h2>
+
 									<ul class="detail_info">
+
 										<li>아몬드사브레</li>
+
 										<li>코코넛사브레</li>
+
 										<li>초코피칸쿠키</li>
+
 										<li>플로랑땡</li>
+
 									</ul>
-									<a href="#" class="btn_detail pop0">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop0">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img14.jpg" alt="" class="lazy">
@@ -95,21 +110,25 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>바나나 피칸 크럼블 컵케익</h2>
-									<a href="#" class="btn_detail pop22">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop22">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img13.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
-									<h2>앙버터 스콘</h2>
-									<a href="#" class="btn_detail pop21">상세보기</a>
+									<h2>앙버터스콘</h2>
+
+									<a href="#" class="btn_detail" data-popup="pop21">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img2_thumb.jpg" alt="" class="lazy">
@@ -117,10 +136,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>스누피 버터쿠키</h2>
-									<a href="#" class="btn_detail pop1">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop1">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img3_thumb.jpg" alt="" class="lazy">
@@ -128,10 +149,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>핑거쿠키 티라미수</h2>
-									<a href="#" class="btn_detail pop2">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop2">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img4.jpg" alt="" class="lazy">
@@ -139,10 +162,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>아몬드 플로랑땡</h2>
-									<a href="#" class="btn_detail pop3">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop3">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img5.jpg" alt="" class="lazy">
@@ -150,10 +175,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>레몬 마들렌</h2>
-									<a href="#" class="btn_detail pop4">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop4">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img6.jpg" alt="" class="lazy">
@@ -161,10 +188,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>바스크 치즈케이크</h2>
-									<a href="#" class="btn_detail pop5">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop5">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img7.jpg" alt="" class="lazy">
@@ -172,10 +201,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>오픈 샌드위치</h2>
-									<a href="#" class="btn_detail pop6">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop6">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img8_thumb.jpg" alt="" class="lazy">
@@ -183,10 +214,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>생초코렛</h2>
-									<a href="#" class="btn_detail pop7">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop7">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img9.jpg" alt="" class="lazy">
@@ -194,10 +227,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>로투스 브라우니</h2>
-									<a href="#" class="btn_detail pop8">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop8">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img10.jpg" alt="" class="lazy">
@@ -205,10 +240,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>팬케이크</h2>
-									<a href="#" class="btn_detail pop9">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop9">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img11.jpg" alt="" class="lazy">
@@ -216,10 +253,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>달고나라떼</h2>
-									<a href="#" class="btn_detail pop10">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop10">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/home/img12.jpg" alt="" class="lazy">
@@ -227,10 +266,12 @@
 							<div class="txt">
 								<div class="inner">
 									<h2>크림브륄레</h2>
-									<a href="#" class="btn_detail pop11">상세보기</a>
+
+									<a href="#" class="btn_detail" data-popup="pop11">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 					</ul>
 				</div>
 			</section>
@@ -238,123 +279,110 @@
 				<h1 class="tit">Canada<br>BRICK STEET BAKERY</h1>
 				<div class="cont">
 					<ul class="list_item">
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/canada/img1.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
-									<a href="#" class="btn_detail pop12">상세보기</a>
+									<a href="#" class="btn_detail" data-popup="pop12">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/canada/img6.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
-									<a href="#" class="btn_detail pop13">상세보기</a>
+									<a href="#" class="btn_detail" data-popup="pop13">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/canada/img3.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
-									<a href="#" class="btn_detail pop14">상세보기</a>
+									<a href="#" class="btn_detail" data-popup="pop14">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/canada/img8.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
-									<a href="#" class="btn_detail pop15">상세보기</a>
+									<a href="#" class="btn_detail" data-popup="pop15">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/canada/img5.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
-									<a href="#" class="btn_detail pop16">상세보기</a>
+									<a href="#" class="btn_detail" data-popup="pop16">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/canada/img11.JPG" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
-									<a href="#" class="btn_detail pop17">상세보기</a>
+									<a href="#" class="btn_detail" data-popup="pop17">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/canada/img7.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
-									<a href="#" class="btn_detail pop18">상세보기</a>
+									<a href="#" class="btn_detail" data-popup="pop18">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/canada/img4.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
-									<a href="#" class="btn_detail pop19">상세보기</a>
+									<a href="#" class="btn_detail" data-popup="pop19">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 						<li>
 							<div class="img_box">
 								<img src="img/loading.jpg" data-original="img/canada/img9.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
-									<a href="#" class="btn_detail pop20">상세보기</a>
+									<a href="#" class="btn_detail" data-popup="pop20">상세보기</a>
 								</div>
 							</div>
 						</li>
+
 					</ul>
 				</div>
 				<div></div>
 			</section>
-			<!-- <section id="cafe" class="promotion_sec">
-				<h1 class="tit">cafe tour</h1>
-				<div class="cont">
-					<ul class="list_item">
-						<li>
-							<div class="img_box">
-								<img src="img/slider/img1.png" alt="">
-							</div>
-							<div class="txt">
-								<div class="inner">
-									<h2>슬라이드</h2>
-									<ul class="detail_info">
-										<li>플러그인 제작</li>
-										<li>JS</li>
-									</ul>
-									<a href="#" class="btn_detail pop7">상세보기</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div></div>
-			</section> -->
 			<section id="contact" class="contact_sec">
 				<h1 class="tit">contact</h1>
 				<div class="cont">
@@ -365,333 +393,389 @@
 						<dt>email</dt>
 						<dd>seona0523@gmail.com</dd>
 					</dl>
-					<!-- <a href="file/UI개발_윤선지이력서.pdf" target="_blank" class="btn_down">이력서</a>
-					<a href="https://github.com/yunsunji9/yunsunji9.github.io/tree/main/fetch-data" target="_blank" class="btn_down btn_github">github</a>				 -->
+					<!-- <a href="file/UI개발_윤선지이력서.pdf" target="_blank" class="btn_down">이력서</a> -->
 				</div>
 			</section>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop0">
 				<div class="pop_container">
 					<div class="pop_content">
-						<!-- <h1>구움과자</h1>
-						<div class="info_area">
-							<dl>
-								<dt>종류</dt>
-								<dd>아몬드사브레</dd>
-								<dd>코코넷사브레</dd>
-								<dd>초코피칸쿠키</dd>
-								<dd>플로랑땡</dd>
-							</dl>
-						</div> -->
-						<!-- <ul class="bxslider" id="slider1">
-							<li><img src="img/home/img1.jpg" alt="" /></li>
-							<li><img src="img/home/img1_2.jpg" alt="" /></li>
-							<li><img src="img/home/img1_3.jpg" alt="" /></li>
-						</ul> -->
 						<div class="cont_area">
+
 							<div class="img_bx">
 								<img src="img/home/img1.jpg" alt="" class="lazy">
 							</div>
+
 							<div class="img_bx">
 								<img src="img/home/img1_2.jpg" alt="" class="lazy">
 							</div>
+
 							<div class="img_bx">
 								<img src="img/home/img1_3.jpg" alt="" class="lazy">
 							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img2.jpg" alt="" class="lazy"/>
-							</div>
-							<div class="img_bx">
-								<img src="img/home/img2_2.jpg" alt="" class="lazy"/>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img3.jpg" alt="" class="lazy"/>
-							</div>
-							<div class="img_bx">
-								<img src="img/home/img3_2.jpg" alt="" class="lazy"/>
-							</div>
-							<!-- <div class="img_bx">
-								<video src="img/home/img3_3.mp4">
-							</div> -->
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img4.jpg" alt="" class="lazy"/>
-							</div>
-							<div class="img_bx">
-								<img src="img/home/img1_2.jpg" alt="" class="lazy"/>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img5.jpg" alt="" class="lazy"/>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img6.jpg" alt="" class="lazy"/>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img7.jpg" alt="" class="lazy"/>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img8.jpg" alt="" class="lazy"/>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img9.jpg" alt="" class="lazy"/>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img10.jpg" alt="" class="lazy"/>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img11.jpg" alt="" class="lazy"/>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img12.jpg" alt="" class="lazy"/>
-							</div>
-							<div class="img_bx">
-								<img src="img/home/img12_2.jpg" alt="" class="lazy"/>
-							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
 
-			<div class="pop_wrap">
+			<div class="pop_wrap" id="pop1">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/canada/img1.jpg" alt="" class="lazy"/>
+								<img src="img/home/img2.jpg" alt="" class="lazy">
 							</div>
+
+							<div class="img_bx">
+								<img src="img/home/img2_2.jpg" alt="" class="lazy">
+							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop2">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/canada/img6.jpg" alt="" class="lazy"/>
+								<img src="img/home/img3.jpg" alt="" class="lazy">
 							</div>
+
+							<div class="img_bx">
+								<img src="img/home/img3_2.jpg" alt="" class="lazy">
+							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop3">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/canada/img3.jpg" alt="" class="lazy"/>
+								<img src="img/home/img4.jpg" alt="" class="lazy">
 							</div>
+
+							<div class="img_bx">
+								<img src="img/home/img1_2.jpg" alt="" class="lazy">
+							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop4">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/canada/img8.jpg" alt="" class="lazy"/>
+								<img src="img/home/img5.jpg" alt="" class="lazy">
 							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop5">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/canada/img5.jpg" alt="" class="lazy"/>
+								<img src="img/home/img6.jpg" alt="" class="lazy">
 							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop6">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/canada/img11.JPG" alt="" class="lazy"/>
+								<img src="img/home/img7.jpg" alt="" class="lazy">
 							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop7">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/canada/img7.jpg" alt="" class="lazy"/>
+								<img src="img/home/img8.jpg" alt="" class="lazy">
 							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop8">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/canada/img4.jpg" alt="" class="lazy"/>
+								<img src="img/home/img9.jpg" alt="" class="lazy">
 							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop9">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/canada/img9.jpg" alt="" class="lazy"/>
+								<img src="img/home/img10.jpg" alt="" class="lazy">
 							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop10">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/home/img13.jpg" alt="" class="lazy"/>
+								<img src="img/home/img11.jpg" alt="" class="lazy">
 							</div>
-							<div class="img_bx">
-								<img src="img/home/img13_2.jpg" alt="" class="lazy"/>
-							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
-			<div class="pop_wrap">
+
+			<div class="pop_wrap" id="pop11">
 				<div class="pop_container">
 					<div class="pop_content">
 						<div class="cont_area">
+
 							<div class="img_bx">
-								<img src="img/home/img14.jpg" alt="" class="lazy"/>
+								<img src="img/home/img12.jpg" alt="" class="lazy">
 							</div>
+
 							<div class="img_bx">
-								<img src="img/home/img14_2.jpg" alt="" class="lazy"/>
+								<img src="img/home/img12_2.jpg" alt="" class="lazy">
 							</div>
+
 						</div>
 					</div>
 					<a href="#" class="btn_close"><span class="arr"><span></a>
 				</div>
 			</div>
+
+			<div class="pop_wrap" id="pop12">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/canada/img1.jpg" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
+			<div class="pop_wrap" id="pop13">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/canada/img6.jpg" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
+			<div class="pop_wrap" id="pop14">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/canada/img3.jpg" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
+			<div class="pop_wrap" id="pop15">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/canada/img8.jpg" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
+			<div class="pop_wrap" id="pop16">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/canada/img5.jpg" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
+			<div class="pop_wrap" id="pop17">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/canada/img11.JPG" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
+			<div class="pop_wrap" id="pop18">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/canada/img7.jpg" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
+			<div class="pop_wrap" id="pop19">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/canada/img4.jpg" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
+			<div class="pop_wrap" id="pop20">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/canada/img9.jpg" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
+			<div class="pop_wrap" id="pop21">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/home/img13.jpg" alt="" class="lazy">
+							</div>
+
+							<div class="img_bx">
+								<img src="img/home/img13_2.jpg" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
+			<div class="pop_wrap" id="pop22">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+
+							<div class="img_bx">
+								<img src="img/home/img14.jpg" alt="" class="lazy">
+							</div>
+
+							<div class="img_bx">
+								<img src="img/home/img14_2.jpg" alt="" class="lazy">
+							</div>
+
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+
 		</main>
 	</div>
-	
 </body>
-
 
 </html>

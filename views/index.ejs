@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio :: yunsunAh</title>
+	<meta name="description" content="backing portfoilo, 베이킹, 제과제빵">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+	<script src="js/main.js"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<script type="text/javascript">
+	$(function() {
+		$('img.lazy').lazyload({effect : 'fadeIn', effectTime : 2000});
+	});
+</script>
+
+<body>
+	<div id="wrap">
+		<header class="header">
+			<div class="inner">
+				<h1><a href="#">Yun Sun Ah</a></h1>
+				<nav>
+					<ul>
+                        <% let arr = [
+                            {
+                                id: 'aboutme',
+                                name: 'aboutme'
+                            },
+                            {
+                                id: 'home',
+                                name: '홈베이킹'
+                            },
+                            {
+                                id: 'bakery',
+                                name: '브릭스트릿 베이커리'
+                            },
+                            {
+                                id: 'contact',
+                                name: 'contact'
+                            }
+                        ].forEach(item => { %>
+                            <li><a href="#<%= item.id %>"><span><%= item.name %></span></a></li>
+                        <% }) %>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<section id="aboutme" class="aboutme_sec">
+				<h1 class="tit">about me</h1>
+				<div class="cont">
+					<dl> 
+						<dt class="name"><span>윤선아</span>(Yun Sun Ah)</dt>
+						<dd>1993. 05. 23</dd>
+						<dd>대전보건대학교 컴퓨터정보통신 졸업</dd>
+					</dl>
+					<dl>
+						<dt>경력사항</dt>
+						<dd>캐나다 브릭스트릿 베이커리 (2017.06 - 2018.01)</dd>
+						<dd>- 샌드위치 제작, 파운드케익 제작, 쿠키 제작</dd>
+						<dd>- 빵 반죽 및 반죽기 조작</dd>
+					</dl>
+					<dl>
+						<dt>자격사항</dt>
+						<dd>- 제빵기능사 (2020.06) </dd>
+						<dd>- 제과기능사 (2020.11)</dd>
+						<dd>- 정보처리기능사 (2014.04)</dd>
+						<dd>- 운전면허 2종 보통 (2014.09)</dd>
+					</dl>
+					<dl>
+						<dt>연수</dt>
+						<dd>- 캐나다 어학연수 일상회화 과정 (2017.02 ~ 2017.05) </dd>
+						<dd>- 캐나다 워킹홀리데이 (2017.06 ~ 2017.12)</dd>
+					</dl>
+				</div>
+			</section>
+			<section id="home" class="backing_sec">
+				<h1 class="tit">home baking</h1>
+				<div class="cont">
+					<ul class="list_item">
+                        <% let backingList = [
+                            {
+                                url: 'img/home/img1_thumb.jpg',
+                                title: '구움과자',
+                                info: ['아몬드사브레', '코코넛사브레', '초코피칸쿠키', '플로랑땡'],
+                                popupid: 'pop0'
+                            },
+                            {
+                                url: 'img/home/img14.jpg',
+                                title: '바나나 피칸 크럼블 컵케익',
+                                popupid: 'pop22'
+                            },
+                            {
+                                url: 'img/home/img13.jpg',
+                                title: '앙버터스콘',
+                                popupid: 'pop21'
+                            },
+                            {
+                                url: 'img/home/img2_thumb.jpg',
+                                title: '스누피 버터쿠키',
+                                popupid: 'pop1'
+                            },
+                            {
+                                url: 'img/home/img3_thumb.jpg',
+                                title: '핑거쿠키 티라미수',
+                                popupid: 'pop2'
+                            },
+                            {
+                                url: 'img/home/img4.jpg',
+                                title: '아몬드 플로랑땡',
+                                popupid: 'pop3'
+                            },
+                            {
+                                url: 'img/home/img5.jpg',
+                                title: '레몬 마들렌',
+                                popupid: 'pop4'
+                            },
+                            {
+                                url: 'img/home/img6.jpg',
+                                title: '바스크 치즈케이크',
+                                popupid: 'pop5'
+                            },
+                            {
+                                url: 'img/home/img7.jpg',
+                                title: '오픈 샌드위치',
+                                popupid: 'pop6'
+                            },
+                            {
+                                url: 'img/home/img8_thumb.jpg',
+                                title: '생초코렛',
+                                popupid: 'pop7'
+                            },
+                            {
+                                url: 'img/home/img9.jpg',
+                                title: '로투스 브라우니',
+                                popupid: 'pop8'
+                            },
+                            {
+                                url: 'img/home/img10.jpg',
+                                title: '팬케이크',
+                                popupid: 'pop9'
+                            },
+                            {
+                                url: 'img/home/img11.jpg',
+                                title: '달고나라떼',
+                                popupid: 'pop10'
+                            },
+                            {
+                                url: 'img/home/img12.jpg',
+                                title: '크림브륄레',
+                                popupid: 'pop11'
+                            }
+                        ].forEach(item => { %>
+						<li>
+							<div class="img_box">
+								<img src="img/loading.jpg" data-original="<%= item.url %>" alt="" class="lazy">
+							</div>
+							<div class="txt">
+								<div class="inner">
+                                    <h2><%= item.title %></h2>
+                                    <% if (item.info) { %> 
+									<ul class="detail_info">
+                                        <% item.info.forEach((list) => { %>
+										<li><%= list %></li>
+                                        <% }) %>
+                                    </ul>
+                                    <% } %>
+									<a href="#" class="btn_detail" data-popup="<%= item.popupid %>">상세보기</a>
+								</div>
+							</div>
+						</li>
+                        <% }) %>  
+					</ul>
+				</div>
+			</section>
+			<section id="bakery" class="promotion_sec">
+				<h1 class="tit">Canada<br>BRICK STEET BAKERY</h1>
+				<div class="cont">
+					<ul class="list_item">
+                        <% let bakeryList = [
+                            {
+                                url: 'img/canada/img1.jpg',
+                                popupid: 'pop12'
+                            },
+                            {
+                                url: 'img/canada/img6.jpg',
+                                popupid: 'pop13'
+                            },
+                            {
+                                url: 'img/canada/img3.jpg',
+                                popupid: 'pop14'
+                            },
+                            {
+                                url: 'img/canada/img8.jpg',
+                                popupid: 'pop15'
+                            },
+                            {
+                                url: 'img/canada/img5.jpg',
+                                popupid: 'pop16'
+                            },
+                            {
+                                url: 'img/canada/img11.JPG',
+                                popupid: 'pop17'
+                            },
+                            {
+                                url: 'img/canada/img7.jpg',
+                                popupid: 'pop18'
+                            },
+                            {
+                                url: 'img/canada/img4.jpg',
+                                popupid: 'pop19'
+                            },
+                            {
+                                url: 'img/canada/img9.jpg',
+                                popupid: 'pop20'
+                            }
+                        ].forEach(item => { %>
+						<li>
+							<div class="img_box">
+								<img src="img/loading.jpg" data-original="<%= item.url %>" alt="" class="lazy">
+							</div>
+							<div class="txt">
+								<div class="inner">
+									<a href="#" class="btn_detail" data-popup="<%= item.popupid %>">상세보기</a>
+								</div>
+							</div>
+                        </li>
+                        <% }) %>
+					</ul>
+				</div>
+				<div></div>
+			</section>
+			<section id="contact" class="contact_sec">
+				<h1 class="tit">contact</h1>
+				<div class="cont">
+					<dl>
+						<dt class="name"><span>윤선아(Yun Sun Ah)</span></dt>
+						<dt>phone</dt>
+						<dd>010-2608-0935</dd>
+						<dt>email</dt>
+						<dd>seona0523@gmail.com</dd>
+					</dl>
+					<!-- <a href="file/UI개발_윤선지이력서.pdf" target="_blank" class="btn_down">이력서</a> -->
+				</div>
+            </section>
+            <% let popupEl = [
+                {
+                    imgArr : [
+                        'img/home/img1.jpg',
+                        'img/home/img1_2.jpg',
+                        'img/home/img1_3.jpg'
+                    ],
+                    id: 'pop0'
+                },
+                {
+                    imgArr : [
+                        'img/home/img2.jpg',
+                        'img/home/img2_2.jpg',
+                    ],
+                    id: 'pop1'
+                },
+                {
+                    imgArr : [
+                        'img/home/img3.jpg',
+                        'img/home/img3_2.jpg',
+                    ],
+                    id: 'pop2'
+                },
+                {
+                    imgArr : [
+                        'img/home/img4.jpg',
+                        'img/home/img1_2.jpg',
+                    ],
+                    id: 'pop3'
+                },
+                {
+                    imgArr : [
+                        'img/home/img5.jpg',
+                    ],
+                    id: 'pop4'
+                },
+                {
+                    imgArr : [
+                        'img/home/img6.jpg',
+                    ],
+                    id: 'pop5'
+                },
+                {
+                    imgArr : [
+                        'img/home/img7.jpg',
+                    ],
+                    id: 'pop6'
+                },
+                {
+                    imgArr : [
+                        'img/home/img8.jpg',
+                    ],
+                    id: 'pop7'
+                },
+                {
+                    imgArr : [
+                        'img/home/img9.jpg',
+                    ],
+                    id: 'pop8'
+                },
+                {
+                    imgArr : [
+                        'img/home/img10.jpg',
+                    ],
+                    id: 'pop9'
+                },
+                {
+                    imgArr : [
+                        'img/home/img11.jpg',
+                    ],
+                    id: 'pop10'
+                },
+                {
+                    imgArr : [
+                        'img/home/img12.jpg',
+                        'img/home/img12_2.jpg',
+                    ],
+                    id: 'pop11'
+                },
+                {
+                    imgArr : [
+                        'img/canada/img1.jpg',
+                    ],
+                    id: 'pop12'
+                },
+                {
+                    imgArr : [
+                        'img/canada/img6.jpg',
+                    ],
+                    id: 'pop13'
+                },
+                {
+                    imgArr : [
+                        'img/canada/img3.jpg',
+                    ],
+                    id: 'pop14'
+                },
+                {
+                    imgArr : [
+                        'img/canada/img8.jpg',
+                    ],
+                    id: 'pop15'
+                },
+                {
+                    imgArr : [
+                        'img/canada/img5.jpg',
+                    ],
+                    id: 'pop16'
+                },
+                {
+                    imgArr : [
+                        'img/canada/img11.JPG',
+                    ],
+                    id: 'pop17'
+                },
+                {
+                    imgArr : [
+                        'img/canada/img7.jpg',
+                    ],
+                    id: 'pop18'
+                },
+                {
+                    imgArr : [
+                        'img/canada/img4.jpg',
+                    ],
+                    id: 'pop19'
+                },
+                {
+                    imgArr : [
+                        'img/canada/img9.jpg',
+                    ],
+                    id: 'pop20'
+                },
+                {
+                    imgArr : [
+                        'img/home/img13.jpg',
+                        'img/home/img13_2.jpg',
+                    ],
+                    id: 'pop21'
+                },
+                {
+                    imgArr : [
+                        'img/home/img14.jpg',
+                        'img/home/img14_2.jpg',
+                    ],
+                    id: 'pop22'
+                }
+            ].forEach(popup => { %> 
+			<div class="pop_wrap" id="<%= popup.id %>">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+                            <% popup.imgArr.forEach((img) => { %>
+							<div class="img_bx">
+								<img src="<%= img %>" alt="" class="lazy">
+                            </div>
+                            <% }) %>
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+            </div>
+            <% }) %>
+		</main>
+	</div>
+</body>
+</html>
