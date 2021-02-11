@@ -9,11 +9,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/main.css">
 </head>
+<script type="text/javascript">
+	$(function(){
+		$('img.lazy').lazyload({effect : 'fadeIn', effectTime : 2000});
+	});
+</script>
 
 <body>
 	<div id="wrap">
@@ -63,10 +70,10 @@
 			<section id="home" class="project_sec">
 				<h1 class="tit">home baking</h1>
 				<div class="cont">
-					<ul class="lst_project">
+					<ul class="list_item">
 						<li>
 							<div class="img_box">
-								<img src="img/home/img1.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img1_thumb.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -83,7 +90,29 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img2.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img14.jpg" alt="" class="lazy">
+							</div>
+							<div class="txt">
+								<div class="inner">
+									<h2>바나나 피칸 크럼블 컵케익</h2>
+									<a href="#" class="btn_detail pop22">상세보기</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="img_box">
+								<img src="img/loading.jpg" data-original="img/home/img13.jpg" alt="" class="lazy">
+							</div>
+							<div class="txt">
+								<div class="inner">
+									<h2>앙버터 스콘</h2>
+									<a href="#" class="btn_detail pop21">상세보기</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="img_box">
+								<img src="img/loading.jpg" data-original="img/home/img2_thumb.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -94,7 +123,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img3.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img3_thumb.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -105,7 +134,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img4.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img4.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -116,7 +145,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img5.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img5.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -127,7 +156,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img6.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img6.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -138,7 +167,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img7.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img7.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -149,7 +178,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img8.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img8_thumb.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -160,7 +189,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img9.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img9.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -171,7 +200,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img10.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img10.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -182,7 +211,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img11.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img11.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -193,7 +222,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/home/img12.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/home/img12.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -208,10 +237,10 @@
 			<section id="bakery" class="promotion_sec">
 				<h1 class="tit">Canada<br>BRICK STEET BAKERY</h1>
 				<div class="cont">
-					<ul class="lst_project">
+					<ul class="list_item">
 						<li>
 							<div class="img_box">
-								<img src="img/canada/img1.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/canada/img1.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -221,7 +250,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/canada/img6.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/canada/img6.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -231,7 +260,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/canada/img3.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/canada/img3.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -241,7 +270,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/canada/img8.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/canada/img8.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -251,7 +280,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/canada/img5.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/canada/img5.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -261,7 +290,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/canada/img11.JPG" alt="">
+								<img src="img/loading.jpg" data-original="img/canada/img11.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -271,7 +300,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/canada/img7.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/canada/img7.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -281,7 +310,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/canada/img4.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/canada/img4.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -291,7 +320,7 @@
 						</li>
 						<li>
 							<div class="img_box">
-								<img src="img/canada/img9.jpg" alt="">
+								<img src="img/loading.jpg" data-original="img/canada/img9.jpg" alt="" class="lazy">
 							</div>
 							<div class="txt">
 								<div class="inner">
@@ -306,7 +335,7 @@
 			<!-- <section id="cafe" class="promotion_sec">
 				<h1 class="tit">cafe tour</h1>
 				<div class="cont">
-					<ul class="lst_project">
+					<ul class="list_item">
 						<li>
 							<div class="img_box">
 								<img src="img/slider/img1.png" alt="">
@@ -360,28 +389,13 @@
 						</ul> -->
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/home/img1.jpg" alt="" />
+								<img src="img/home/img1.jpg" alt="" class="lazy">
 							</div>
 							<div class="img_bx">
-								<img src="img/home/img1_2.jpg" alt="" />
+								<img src="img/home/img1_2.jpg" alt="" class="lazy">
 							</div>
 							<div class="img_bx">
-								<img src="img/home/img1_3.jpg" alt="" />
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img2.jpg" alt="" />
-							</div>
-							<div class="img_bx">
-								<img src="img/home/img2_2.jpg" alt="" />
+								<img src="img/home/img1_3.jpg" alt="" class="lazy">
 							</div>
 						</div>
 					</div>
@@ -393,10 +407,25 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/home/img3.jpg" alt="" />
+								<img src="img/home/img2.jpg" alt="" class="lazy"/>
 							</div>
 							<div class="img_bx">
-								<img src="img/home/img3_2.jpg" alt="" />
+								<img src="img/home/img2_2.jpg" alt="" class="lazy"/>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+			<div class="pop_wrap">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+							<div class="img_bx">
+								<img src="img/home/img3.jpg" alt="" class="lazy"/>
+							</div>
+							<div class="img_bx">
+								<img src="img/home/img3_2.jpg" alt="" class="lazy"/>
 							</div>
 							<!-- <div class="img_bx">
 								<video src="img/home/img3_3.mp4">
@@ -411,22 +440,10 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/home/img4.jpg" alt="" />
+								<img src="img/home/img4.jpg" alt="" class="lazy"/>
 							</div>
 							<div class="img_bx">
-								<img src="img/home/img1_2.jpg" alt="" />
-							</div>
-						</div>
-					</div>
-					<a href="#" class="btn_close"><span class="arr"><span></a>
-				</div>
-			</div>
-			<div class="pop_wrap">
-				<div class="pop_container">
-					<div class="pop_content">
-						<div class="cont_area">
-							<div class="img_bx">
-								<img src="img/home/img5.jpg" alt="" />
+								<img src="img/home/img1_2.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -438,7 +455,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/home/img6.jpg" alt="" />
+								<img src="img/home/img5.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -450,7 +467,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/home/img7.jpg" alt="" />
+								<img src="img/home/img6.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -462,7 +479,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/home/img8.jpg" alt="" />
+								<img src="img/home/img7.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -474,7 +491,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/home/img9.jpg" alt="" />
+								<img src="img/home/img8.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -486,7 +503,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/home/img10.jpg" alt="" />
+								<img src="img/home/img9.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -498,7 +515,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/home/img11.jpg" alt="" />
+								<img src="img/home/img10.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -510,10 +527,22 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/home/img12.jpg" alt="" />
+								<img src="img/home/img11.jpg" alt="" class="lazy"/>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+			<div class="pop_wrap">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+							<div class="img_bx">
+								<img src="img/home/img12.jpg" alt="" class="lazy"/>
 							</div>
 							<div class="img_bx">
-								<img src="img/home/img12_2.jpg" alt="" />
+								<img src="img/home/img12_2.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -526,7 +555,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/canada/img1.jpg" alt="" />
+								<img src="img/canada/img1.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -538,7 +567,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/canada/img6.jpg" alt="" />
+								<img src="img/canada/img6.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -550,7 +579,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/canada/img3.jpg" alt="" />
+								<img src="img/canada/img3.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -562,7 +591,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/canada/img8.jpg" alt="" />
+								<img src="img/canada/img8.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -574,7 +603,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/canada/img5.jpg" alt="" />
+								<img src="img/canada/img5.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -586,7 +615,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/canada/img11.JPG" alt="" />
+								<img src="img/canada/img11.JPG" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -598,7 +627,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/canada/img7.jpg" alt="" />
+								<img src="img/canada/img7.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -610,7 +639,7 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/canada/img4.jpg" alt="" />
+								<img src="img/canada/img4.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -622,7 +651,37 @@
 					<div class="pop_content">
 						<div class="cont_area">
 							<div class="img_bx">
-								<img src="img/canada/img9.jpg" alt="" />
+								<img src="img/canada/img9.jpg" alt="" class="lazy"/>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+			<div class="pop_wrap">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+							<div class="img_bx">
+								<img src="img/home/img13.jpg" alt="" class="lazy"/>
+							</div>
+							<div class="img_bx">
+								<img src="img/home/img13_2.jpg" alt="" class="lazy"/>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn_close"><span class="arr"><span></a>
+				</div>
+			</div>
+			<div class="pop_wrap">
+				<div class="pop_container">
+					<div class="pop_content">
+						<div class="cont_area">
+							<div class="img_bx">
+								<img src="img/home/img14.jpg" alt="" class="lazy"/>
+							</div>
+							<div class="img_bx">
+								<img src="img/home/img14_2.jpg" alt="" class="lazy"/>
 							</div>
 						</div>
 					</div>
@@ -631,6 +690,7 @@
 			</div>
 		</main>
 	</div>
+	
 </body>
 
 

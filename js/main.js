@@ -166,7 +166,18 @@ $(document).ready(function(){
         $('.pop_wrap').eq(20).show();
         e.preventDefault();
     });
-
+    $('.pop21').on('click', function(e){
+        $('body').addClass('fixed');
+        $('.pop_wrap').hide();
+        $('.pop_wrap').eq(21).show();
+        e.preventDefault();
+    });
+    $('.pop22').on('click', function(e){
+        $('body').addClass('fixed');
+        $('.pop_wrap').hide();
+        $('.pop_wrap').eq(22).show();
+        e.preventDefault();
+    });
 
     
 
